@@ -1,0 +1,45 @@
+/* ==== Custom Media Queries */
+/* ==== Custom Media Queries */
+
+
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 768px) {
+
+    .nav__close,
+    .nav__toggle {
+        display: none;
+    }
+
+    .nav__menu {
+        position: static;
+        background-color: transparent;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        margin-left: 5rem;
+    }
+
+    .menu {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .menu__item {
+        margin-left: 2.5rem;
+    }
+
+    .menu__item:first-child {
+        margin-left: 0;
+    }
+
+    .menu__link {
+        font-family: "Poppins-Medium" !important;
+    }
+}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (min-width: 1200px) {}
+
+@media screen and (min-width: 1400px) {}

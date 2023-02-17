@@ -1,0 +1,129 @@
+:root {
+  --first-color: hsl(31, 100%, 70%);
+  --button-color: hsl(0, 0%, 17%);
+  --button-color-alt: hsl(0, 0%, 21%);
+  --title-color: hsl(0, 0%, 15%);
+  --text-color: hsl(0, 0%, 35%);
+  --text-color-light: hsl(0, 0%, 55%);
+  --body-color: hsl(0, 0%, 99%);
+  --container-color: #fff;
+  --border-color: hsl(0, 0%, 94%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-family: "Poppins-Regular";
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.header {
+  background-color: transparent;
+  width: 100%;
+}
+
+.nav {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+.nav__logo .nav__logo-icon {
+  margin-right: 0.5rem;
+  color: var(--title-color);
+  font-size: 2.5rem;
+}
+.nav__logo .nav__logo-text {
+  text-transform: uppercase;
+  font-family: "Poppins-Bold";
+  color: var(--title-color);
+  letter-spacing: 0.1rem;
+}
+
+.nav__menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--body-color);
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 2rem 3.5rem;
+  text-align: center;
+  transition: 0.4s;
+}
+.nav__menu .nav__close {
+  color: var(--title-color);
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+}
+.nav__menu .nav__close > i {
+  font-size: 2.5rem;
+}
+
+.active {
+  right: 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.menu .menu__link {
+  color: var(--title-color);
+  font-family: "Poppins-SemiBold";
+  transition: 0.4s;
+}
+.menu .menu__link:hover {
+  color: var(--first-color);
+}
+
+.nav__toggle {
+  color: var(--title-color);
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.nav__toggle > i {
+  font-size: 2.5rem;
+}
+
+.nav__icons {
+  display: flex;
+  align-items: center;
+}
+.nav__icons .nav__shopping-cart > i {
+  font-size: 2rem;
+  color: var(--title-color);
+  cursor: pointer;
+}/*# sourceMappingURL=app.css.map */
